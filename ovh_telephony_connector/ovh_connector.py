@@ -90,7 +90,7 @@ class PhoneCommon(models.AbstractModel):
                 user.ovh_billing_number)
             _logger.info("OVH telephonyClick2CallDo successfull")
 
-        except Exception, e:
+        except Exception as e:
             _logger.error(
                 "Error in the OVH telephonyClick2CallDo request")
             _logger.error(
